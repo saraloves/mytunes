@@ -1,6 +1,10 @@
 // Songs.js - Defines a backbone collection class for songs.
-var Songs = Backbone.Collection.extend({
+window.MyTunes = window.MyTunes || {};
+window.MyTunes.Collections = window.MyTunes.Collections || {};
 
-  model: SongModel
+MyTunes.Collections.Songs = Backbone.Collection.extend({
 
+  model: MyTunes.Models.SongModel
 });
+
+
